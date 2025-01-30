@@ -50,10 +50,8 @@ print(s.average_score())  # 输出 85.00
 #### **题目5：线性代数**  
 **计算题**：  
 给定矩阵：
-$
-A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}, \quad 
-B = \begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix} 
-$
+$A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}, \quad$ 
+$B = \begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix}$
 计算 $A \times B$（矩阵乘法）和 $A \circ B$（哈达玛积，即逐元素相乘）的结果。
 
 ---
