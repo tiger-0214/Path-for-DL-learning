@@ -1,4 +1,4 @@
-好的！以下是针对**第1-2周学习内容**的测试题，分为**Python编程/数据处理**和**数学基础/算法**两大模块，包含选择题、编程题和简答题。完成后可对照答案自测掌握程度。
+以下是针对**第1-2周学习内容**的测试题，分为**Python编程/数据处理**和**数学基础/算法**两大模块，包含选择题、编程题和简答题。完成后可对照答案自测掌握程度。
 
 ---
 
@@ -50,10 +50,10 @@ print(s.average_score())  # 输出 85.00
 #### **题目5：线性代数**  
 **计算题**：  
 给定矩阵：
-$$
+$
 A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}, \quad 
-B = \begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix}  
-$$  
+B = \begin{bmatrix} 5 & 6 \\ 7 & 8 \end{bmatrix} 
+$
 计算 $A \times B$（矩阵乘法）和 $A \circ B$（哈达玛积，即逐元素相乘）的结果。
 
 ---
@@ -148,28 +148,64 @@ plt.close()
 
 ---
 
-#### **模块2答案**  
+#### **模块2答案**
 **题目5**：  
-- 矩阵乘法：  
-$$  
-A \times B = \begin{bmatrix} 1*5+2*7 & 1*6+2*8 \\ 3*5+4*7 & 3*6+4*8 \end{bmatrix} = \begin{bmatrix} 19 & 22 \\ 43 & 50 \end{bmatrix}  
-$$  
-- 哈达玛积：  
-$$  
-A \circ B = \begin{bmatrix} 1*5 & 2*6 \\ 3*7 & 4*8 \end{bmatrix} = \begin{bmatrix} 5 & 12 \\ 21 & 32 \end{bmatrix}  
-$$  
+- **矩阵乘法**：  
+  $$
+  \begin{aligned}
+  A \times B &= \begin{bmatrix} 
+  1 \cdot 5 + 2 \cdot 7 & 1 \cdot 6 + 2 \cdot 8 \\ 
+  3 \cdot 5 + 4 \cdot 7 & 3 \cdot 6 + 4 \cdot 8 
+  \end{bmatrix} \\
+  &= \begin{bmatrix} 
+  19 & 22 \\ 
+  43 & 50 
+  \end{bmatrix}
+  \end{aligned}
+  $$  
+
+- **哈达玛积**：  
+  $$
+  A \circ B = \begin{bmatrix} 
+  1 \cdot 5 & 2 \cdot 6 \\ 
+  3 \cdot 7 & 4 \cdot 8 
+  \end{bmatrix} = \begin{bmatrix} 
+  5 & 12 \\ 
+  21 & 32 
+  \end{bmatrix}
+  $$
+
+---
 
 **题目6**：  
-1. $\frac{\partial f}{\partial x} = 3x^2 + 2y$, $\frac{\partial f}{\partial y} = 2x + 2y$  
-2. 在$(1,2)$处梯度为：$\nabla f = (3*1^2 + 2*2, 2*1 + 2*2) = (7, 6)$  
+1. **偏导数**：  
+   $$
+   \frac{\partial f}{\partial x} = 3x^2 + 2y, \quad 
+   \frac{\partial f}{\partial y} = 2x + 2y
+   $$  
+
+2. **梯度向量**：  
+   $$
+   \nabla f(1, 2) = \left( 3(1)^2 + 2(2),\ 2(1) + 2(2) \right) = (7, 6)
+   $$
+
+---
 
 **题目7**：  
-根据贝叶斯定理：  
-$$  
-P(\text{患病} | \text{阳性}) = \frac{P(\text{阳性}|\text{患病})P(\text{患病})}{P(\text{阳性})}  
-$$  
-其中 $P(\text{阳性}) = P(\text{阳性}|\text{患病})P(\text{患病}) + P(\text{阳性}|\text{健康})P(\text{健康}) = 0.95*0.01 + 0.1*0.99 = 0.1085$  
-结果为 $\frac{0.95*0.01}{0.1085} \approx 8.76\%$  
+**贝叶斯定理计算过程**：  
+$$
+\begin{aligned}
+P(\text{患病} | \text{阳性}) 
+&= \frac{P(\text{阳性}|\text{患病}) P(\text{患病})}{P(\text{阳性})} \\
+P(\text{阳性}) 
+&= P(\text{阳性}|\text{患病}) P(\text{患病}) + P(\text{阳性}|\text{健康}) P(\text{健康}) \\
+&= (0.95 \times 0.01) + (0.10 \times 0.99) \\
+&= 0.0095 + 0.099 \\
+&= 0.1085 \\
+\Rightarrow P(\text{患病} | \text{阳性}) 
+&= \frac{0.0095}{0.1085} \approx 8.76\%
+\end{aligned}
+$$ 
 
 **题目8**：  
 ```python  
