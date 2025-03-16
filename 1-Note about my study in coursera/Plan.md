@@ -1,1 +1,0 @@
-I will follow this path during my holidays
